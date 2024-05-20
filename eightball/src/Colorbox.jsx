@@ -41,7 +41,7 @@ const Colorbox = () => {
     setColors(newColors);
   };
 
-  // make boxes
+  // make boxes by iterates over the colors array
   const boxes = colors.map((color, index) => (
     <div
       key={index}
