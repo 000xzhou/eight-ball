@@ -38,10 +38,19 @@ function Eightball() {
     setColor(answers[randomNum].color);
   }
 
+  //   reset teh msg and color
+  function reset() {
+    setMsg("Think of a Question");
+    setColor("");
+  }
+
   return (
-    <button style={{ backgroundColor: color }} onClick={handleClick}>
-      {msg}
-    </button>
+    <>
+      <button style={{ backgroundColor: color }} onClick={handleClick}>
+        {msg}
+      </button>
+      <button onClick={reset}>reset</button>
+    </>
   );
 }
 
