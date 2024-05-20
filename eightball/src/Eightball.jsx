@@ -39,7 +39,7 @@ function Eightball() {
   }
 
   return (
-    <button style={{ color: color }} onClick={handleClick}>
+    <button style={{ backgroundColor: color }} onClick={handleClick}>
       {msg}
     </button>
   );
